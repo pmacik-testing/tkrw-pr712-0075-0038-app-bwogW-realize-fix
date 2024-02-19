@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-wcp5
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0038-tenant/tkrw-pr712-0075-0038-app/devfile-sample-wcp5@sha256:e1436ce2b449347a80d2f14fead85c9369311e909a0c2d83c2b91f2e6cdd1465
+        name: my-nodejs
+        resources: {}
+status: {}
